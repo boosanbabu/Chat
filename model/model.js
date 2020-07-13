@@ -12,7 +12,7 @@ mongoose.connection.on('error', function (err) {
     console.log(err);
 });
 
-mongoose.createConnection('mongodb://heroku_hn2bx6fp:qdgmqic5vvv121bhmi0lfu7msl@ds151753.mlab.com:51753/heroku_hn2bx6fp');
+//mongoose.createConnection('mongodb://heroku_hn2bx6fp:qdgmqic5vvv121bhmi0lfu7msl@ds151753.mlab.com:51753/heroku_hn2bx6fp');
 
 module.exports.user=mongoose.model('User',new Schema({
     name:String,
