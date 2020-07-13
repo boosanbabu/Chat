@@ -4,13 +4,13 @@
   "description": "Chat application for local usage",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sudheeshshetty/Chat"
+    "url": "https://github.com/boosanbabu/Chat"
   },
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
-  "author": "Sudheesh Shetty",
+  "author": "Boosan",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
@@ -22,10 +22,10 @@
   },
   "config": {
     "server": {
-      "port": "8080"
+      "port": "6996"
     },
     "db": {
-      "url": "mongodb://localhost:27017/chat"
+      "url": "mongodb://heroku_hn2bx6fp:qdgmqic5vvv121bhmi0lfu7msl@ds151753.mlab.com:51753/heroku_hn2bx6fp"
     }
   }
 }
