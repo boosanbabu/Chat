@@ -30,40 +30,7 @@
 </div>
 
 
-<!--
-<div class="container text-center center">
-asdasda
-</div>
--->
-
-<!--
-<form action="http://localhost:8080/register" method="post">
-Name:<br>
-<input id="name" type="text" name="name" placeholder="Enter your name">
-<br>
-Handle:<br>
-<input id="handle" type="text" name="handle" placeholder="Enter the handle you want to use">
-<br>
-Phone:<br>
-<input id="phone" type="text" name="phone" placeholder="Enter your phone number">
-<br>
-Email:<br>
-<input id="email" type="email" name="email" placeholder="Enter your email">
-<br><br>
-<input type="submit" value="Submit">
-</form>
-
-<form action="http://localhost:8080/login">
-Handle:<br>
-<input id="handle" type="text" name="handle" placeholder="Enter the handle you want to use">
-<br><br><br>
-<input type="submit" value="login">
-</form>
--->
-
-
-
-<div class="modal fade" id="registerModal role="dialog">
+<div class="modal fade" id="registerModal" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content" >
             <div class="modal-header" style="padding:15px 50px;">
@@ -71,7 +38,7 @@ Handle:<br>
                 <h4 class="text-center"><span class="glyphicon glyphicon-lock"></span> Register</h4>
             </div>
             <div class="modal-body" style="padding:20px 50px;">
-                <form role="form" action="http://localhost:8080/register" method="post">
+                <form role="form" action="/register" method="post">
                     <div class="form-group">
                         <label for="name"><span class="glyphicon glyphicon-user"></span> Name</label>
                         <input type="text" class="form-control" id="name" placeholder="Full Name" ng-model="user.name">
