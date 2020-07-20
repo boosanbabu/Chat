@@ -201,7 +201,6 @@ app.controller('myController',['$scope','socket','$http','$mdDialog','$compile',
                             <span class="direct-chat-name pull-right">'+data.split("#*@")[1]+'</span>\
                             <span class="direct-chat-timestamp pull-left">'+getDate()+'</span>\
                             </div>\
-                            <img class="direct-chat-img" src="" alt="message user image">\
                             <div class="direct-chat-text">'
                             +data.split("#*@")[0]+
                             '</div>\
@@ -218,7 +217,6 @@ app.controller('myController',['$scope','socket','$http','$mdDialog','$compile',
                         <span class="direct-chat-name pull-left">'+$scope.user+'</span>\
                         <span class="direct-chat-timestamp pull-right">'+getDate()+'</span>\
                         </div>\
-                        <img class="direct-chat-img" src=""\ alt="message user image">\
                         <div class="direct-chat-text">'
                         +message+
                         '</div>\
@@ -256,7 +254,6 @@ app.controller('myController',['$scope','socket','$http','$mdDialog','$compile',
                         <span class="direct-chat-name pull-right    ">'+data.split("#*@")[2]+'</span>\
                         <span class="direct-chat-timestamp pull-left">'+getDate()+'</span>\
                         </div>\
-                        <img class="direct-chat-img" src="" alt="message user image">\
                         <div class="direct-chat-text">'
                         +data.split("#*@")[1]+
                         '</div>\
@@ -282,7 +279,6 @@ app.controller('myController',['$scope','socket','$http','$mdDialog','$compile',
                         <span class="direct-chat-name pull-left">'+$scope.user+'</span>\
                         <span class="direct-chat-timestamp pull-right">'+getDate()+'</span>\
                         </div>\
-                        <img class="direct-chat-img" src=""\ alt="message user image">\
                         <div class="direct-chat-text">'
                         +message+
                         '</div>\
@@ -370,7 +366,6 @@ app.controller('myController',['$scope','socket','$http','$mdDialog','$compile',
 <span class="direct-chat-name pull-left">'+$scope.messages[chat_friend][i].sender+'</span>\
 <span class="direct-chat-timestamp pull-right">'+$scope.messages[chat_friend][i].date+'</span>\
 </div>\
-<img class="direct-chat-img" src=""\ alt="message user image">\
 <div class="direct-chat-text">'
     +$scope.messages[chat_friend][i].msg+
     '</div>\
@@ -385,7 +380,6 @@ app.controller('myController',['$scope','socket','$http','$mdDialog','$compile',
 <span class="direct-chat-name pull-right    ">'+$scope.messages[chat_friend][i].sender+'</span>\
 <span class="direct-chat-timestamp pull-left">'+$scope.messages[chat_friend][i].date+'</span>\
 </div>\
-<img class="direct-chat-img" src="" alt="message user image">\
 <div class="direct-chat-text">'
     +$scope.messages[chat_friend][i].msg+
     '</div>\

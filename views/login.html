@@ -17,14 +17,12 @@
                     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                     <input class="form-control" type="password" name='password' placeholder="password" ng-model="login_data.password" my-enter="login()"/>     
                 </div>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" checked>Remember me</label>
-                </div>
+
                 <button type="button" class="btn btn-primary btn-block" ng-click="login()"><span class="glyphicon glyphicon-off"></span>
                     Login</button>
-                <div class="form-group pull-left"><a href="#">Forgot Password?</a>
+                <div class="form-group pull-left"><a href="#" data-toggle="modal" data-target="#forgotPasswordModal">Forgot Password?</a>
                 </div>
-                <div class="form-group pull-right">Not a member?<a href="#" data-toggle="modal" data-target="#myModal">Register</a>
+                <div class="form-group pull-right">Not a member ?  <a href="#" data-toggle="modal" data-target="#registerModal">Register</a>
                 </div>
             </form>
         </div>
@@ -65,7 +63,7 @@ Handle:<br>
 
 
 
-<div class="modal fade" id="myModal" role="dialog">
+<div class="modal fade" id="registerModal role="dialog">
     <div class="modal-dialog">
         <div class="modal-content" >
             <div class="modal-header" style="padding:15px 50px;">

@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-mongoose.createConnection("mongodb://heroku_hn2bx6fp:qdgmqic5vvv121bhmi0lfu7msl@ds151753.mlab.com:51753/heroku_hn2bx6fp");
+mongoose.connect("mongodb://localhost:27017/chat");
 
 mongoose.connection.on('open', function (ref) {
     console.log('Connected to mongo server.');
@@ -12,7 +12,7 @@ mongoose.connection.on('error', function (err) {
     console.log(err);
 });
 
-//mongoose.createConnection('mongodb://heroku_hn2bx6fp:qdgmqic5vvv121bhmi0lfu7msl@ds151753.mlab.com:51753/heroku_hn2bx6fp');
+//mongoose.connect('mongodb://localhost/mongodb');
 
 module.exports.user=mongoose.model('User',new Schema({
     name:String,

@@ -81,6 +81,9 @@ module.exports = function (app,io){
         console.log("keys list : "+keys);
         models.user.find({"handle" : handle},{friends:1,_id:0},function(err,doc){
             if(err){res.json(err);}
+            else if(!doc){
+                console.log("Nothing found");
+            }
             else{
                 friends=[];
                 pending=[];
