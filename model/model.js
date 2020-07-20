@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 const herokuurl =  "mongodb://heroku_hn2bx6fp:qdgmqic5vvv121bhmi0lfu7msl@ds151753.mlab.com:51753/heroku_hn2bx6fp";
 const localurl = "mongodb://localhost:27017/chat";
-mongoose.connect(herokuurl);
+mongoose.connect(process.env.MONGODB_URI || localurl);
 
 mongoose.connection.on('open', function (ref) {
     console.log('Connected to mongo server.');
