@@ -56,6 +56,7 @@ app.directive('myEnter', function () {
 
 app.controller('myController',['$scope','socket','$http','$mdDialog','$compile','$location','$state','$localStorage', '$sessionStorage',function($scope,socket,$http,$mdDialog,$compile,$location,$state,$localStorage, $sessionStorage){
     host = location.host;
+    protocol = location.protocol;
     console.log(host);
     $scope.users=[];
     $scope.online_friends=[];
